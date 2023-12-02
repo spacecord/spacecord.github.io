@@ -26,13 +26,13 @@ FOSSCORD_GWEP = "ws://"+FOSSCORD_HOST
 }
 */
 FOSSCORD_HOST = "old.server.spacebar.chat"
-FOSSCORD_GWEP = "wss://"+FOSSCORD_HOST
+FOSSCORD_GWEP = "wss://"+"gateway."+FOSSCORD_HOST
 window.GLOBAL_ENV = {
-API_ENDPOINT: "//"+FOSSCORD_HOST+"/api",
+API_ENDPOINT: "//"+"api."+FOSSCORD_HOST+"/api",
 API_VERSION: 9,
 GATEWAY_ENDPOINT: FOSSCORD_GWEP,
 WEBAPP_ENDPOINT: "//"+FOSSCORD_HOST,
-CDN_HOST: FOSSCORD_HOST,
+CDN_HOST: "cdn."+FOSSCORD_HOST,
 ASSET_ENDPOINT: "//"+FOSSCORD_HOST,
 MEDIA_PROXY_ENDPOINT: "//"+FOSSCORD_HOST+"/media", // TODO: Fix and add actual media proxy endpoint, does it even exist in fosscord yet? 02/23/2023 MM/DD/YYYY
 WIDGET_ENDPOINT: "//"+FOSSCORD_HOST+"/widget", // TODO: Same for Media and widget
