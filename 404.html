@@ -20,9 +20,9 @@ FOSSCORD_HOST = location.hostname
 FOSSCORD_HOST = location.hostname+":"+location.port
 }
 if (location.protocol == "https:") {
-FOSSCORD_GWEP = "wss://"+SPACEBAR_HOST
+FOSSCORD_GWEP = "wss://"+FOSSCORD_HOST
 } else {
-FOSSCORD_GWEP = "ws://"+SPACEBAR_HOST
+FOSSCORD_GWEP = "ws://"+FOSSCORD_HOST
 }
 
 SPACEBAR_HOST = "old.server.spacebar.chat"
